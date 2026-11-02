@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tanishq Yadav - Data Analyst & Aspiring Data Scientist. Portfolio showcasing AI-powered applications, data analytics projects, and machine learning expertise.">
+  <title>Tanishq Yadav | Data Analyst & Developer</title>
+  <link rel="canonical" href="https://tanishqyadav.dev/">
+  <meta property="og:title" content="Tanishq Yadav | Data Analyst Portfolio">
+  <meta property="og:description" content="Turning complex data into insights and building AI-powered applications.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://d2ol7oe51mr4n9.cloudfront.net">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+  <style>
+    /* Hero-specific styles */
+    @keyframes riseIn {
+      from {
+        opacity: 0;
+        transform: translateY(14px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hero-location {
+      position: absolute;
+      top: calc(70 * var(--u));
+      right: calc(202 * var(--u));
+      font-size: calc(13 * var(--u));
+      font-weight: 500;
+      text-align: right;
+      line-height: 1.4;
+      animation: riseIn 0.8s ease-out 0.055s backwards;
+    }
+
+    .hero-email-btn {
+      position: absolute;
+      top: calc(63 * var(--u));
+      right: calc(57 * var(--u));
+      width: calc(144 * var(--u));
+      height: calc(46 * var(--u));
+      background: var(--hero-text);
+      color: white;
+      border: none;
+      border-radius: calc(8 * var(--u));
+      font-size: calc(13 * var(--u));
+      font-weight: 500;
+      font-family: 'Inter Tight', system-ui, -apple-system, sans-serif;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      animation: riseIn 0.8s ease-out 0.11s backwards;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+
+    .hero-email-btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .hero-title-container {
+      position: absolute;
+      top: calc(246 * var(--u));
+      left: calc(57 * var(--u));
+      z-index: 5;
+    }
+
+    .hero-title {
+      font-family: 'Archivo', system-ui, -apple-system, sans-serif;
+      font-size: calc(90 * var(--u));
+      font-weight: 640;
+      font-variation-settings: 'wdth' 104;
+      line-height: 0.86;
+      letter-spacing: -0.06em;
+      margin: 0;
+      text-transform: uppercase;
+      overflow: hidden;
+    }
+
+    .hero-title-line {
+      display: block;
+      animation: titleLineRise 1s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+      transform-origin: bottom;
+    }
+
+    .hero-title-line:nth-child(1) {
+      animation-delay: 0s;
+    }
+
+    .hero-title-line:nth-child(2) {
+      animation-delay: 0.11s;
+    }
+
+    .hero-title-year {
+      font-size: calc(14 * var(--u));
+      font-weight: 400;
+      margin-left: calc(8 * var(--u));
+      display: inline-block;
+    }
+
+    .hero-about {
+      position: absolute;
+      top: calc(458 * var(--u));
+      left: calc(57 * var(--u));
+      animation: riseIn 0.8s ease-out 0.22s backwards;
+    }
+
+    .hero-about-label {
+      font-size: calc(13 * var(--u));
+      font-weight: 500;
+      margin-bottom: calc(12 * var(--u));
+      opacity: 0.7;
+    }
+
+    .hero-about-text {
+      font-size: calc(14 * var(--u));
+      line-height: 1.5;
+      margin-bottom: calc(24 * var(--u));
+      max-width: calc(380 * var(--u));
+    }
+
+    .hero-projects-btn {
+      background: var(--hero-text);
+      color: white;
+      border: none;
+      padding: calc(10 * var(--u)) calc(20 * var(--u));
+      border-radius: calc(6 * var(--u));
+      font-size: calc(13 * var(--u));
+      font-weight: 500;
+      font-family: 'Inter Tight', system-ui, -apple-system, sans-serif;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .hero-projects-btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .hero-stats-frame {
+      position: absolute;
+      left: calc(57 * var(--u));
+      top: calc(693 * var(--u));
+      width: calc(341 * var(--u));
+      height: calc(208 * var(--u));
+      background: var(--card-light);
+      border-radius: calc(12 * var(--u));
+      padding: calc(24 * var(--u));
+      display: flex;
+      flex-direction: column;
+      gap: calc(12 * var(--u));
+      animation: riseIn 0.8s ease-out 0.33s backwards;
+      color: var(--hero-text);
+    }
+
+    .stats-card-dark {
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: calc(16 * var(--u));
+      border-radius: calc(8 * var(--u));
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .stats-cgpa {
+      font-size: calc(14 * var(--u));
+      font-weight: 600;
+      margin-bottom: calc(8 * var(--u));
+    }
+
+    .stats-skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: calc(6 * var(--u));
+      margin-bottom: calc(12 * var(--u));
+    }
+
+    .skill-tag {
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: white;
+      padding: calc(4 * var(--u)) calc(8 * var(--u));
+      border-radius: calc(4 * var(--u));
+      font-size: calc(11 * var(--u));
+      font-weight: 500;
+    }
+
+    .stats-open-work {
+      background: white;
+      color: var(--hero-text);
+      border: none;
+      padding: calc(8 * var(--u)) calc(12 * var(--u));
+      border-radius: calc(4 * var(--u));
+      font-size: calc(12 * var(--u));
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .stats-photo-card {
+      position: relative;
+      background: white;
+      border-radius: calc(8 * var(--u));
+      overflow: hidden;
+      height: calc(80 * var(--u));
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .stats-photo-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .stats-photo-label {
+      position: absolute;
+      top: calc(8 * var(--u));
+      left: calc(8 * var(--u));
+      font-size: calc(11 * var(--u));
+      font-weight: 500;
+      color: var(--hero-text);
+    }
+
+    .stats-photo-bottom {
+      position: absolute;
+      bottom: calc(8 * var(--u));
+      right: calc(8 * var(--u));
+      font-size: calc(12 * var(--u));
+      font-weight: 600;
+      color: var(--hero-text);
+    }
+
+    .hero-availability {
+      position: absolute;
+      top: calc(442 * var(--u));
+      right: calc(57 * var(--u));
+      text-align: right;
+      font-size: calc(14 * var(--u));
+      font-weight: 500;
+      animation: riseIn 0.8s ease-out 0.22s backwards;
+    }
+
+    .hero-featured-project {
+      position: absolute;
+      top: calc(593 * var(--u));
+      right: calc(57 * var(--u));
+      width: calc(326 * var(--u));
+      animation: riseIn 0.8s ease-out 0.27s backwards;
+    }
+
+    .featured-title {
+      font-size: calc(13 * var(--u));
+      font-weight: 500;
+      margin-bottom: calc(12 * var(--u));
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .featured-card-img {
+      position: relative;
+      width: 100%;
+      height: calc(196 * var(--u));
+      border-radius: calc(12 * var(--u));
+      overflow: hidden;
+      background: rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: calc(12 * var(--u));
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .featured-card-img:hover {
+      transform: scale(1.05);
+    }
+
+    .featured-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .featured-arrow {
+      position: absolute;
+      bottom: calc(12 * var(--u));
+      right: calc(12 * var(--u));
+      width: calc(40 * var(--u));
+      height: calc(40 * var(--u));
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: calc(16 * var(--u));
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .featured-card-img:hover .featured-arrow {
+      transform: rotate(45deg);
+    }
+
+    .featured-progress {
+      width: 100%;
+      height: calc(2 * var(--u));
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 1px;
+      overflow: hidden;
+      margin-bottom: calc(6 * var(--u));
+    }
+
+    .featured-progress-bar {
+      height: 100%;
+      width: 0%;
+      background: var(--hero-text);
+      animation: progressDraw 1.2s ease-out 0.5s forwards;
+    }
+
+    @keyframes progressDraw {
+      to {
+        width: 65%;
+      }
+    }
+
+    .brand-plate {
+      position: absolute;
+      top: calc(444 * var(--u));
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(364 * var(--u));
+      height: calc(73 * var(--u));
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(10px);
+      border-radius: calc(12 * var(--u));
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 calc(24 * var(--u));
+      z-index: 4;
+    }
+
+    .brand-mark {
+      width: calc(40 * var(--u));
+      height: calc(40 * var(--u));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 700;
+      font-size: calc(20 * var(--u));
+    }
+
+    .brand-text {
+      font-family: 'Archivo', system-ui, -apple-system, sans-serif;
+      font-size: calc(25 * var(--u));
+      font-weight: 700;
+      font-variation-settings: 'wdth' 104;
+      color: white;
+      letter-spacing: 0.05em;
+      flex: 1;
+      text-align: center;
+    }
+
+    .brand-menu {
+      width: calc(24 * var(--u));
+      height: calc(24 * var(--u));
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      cursor: pointer;
+      color: white;
+      background: none;
+      border: none;
+      padding: 0;
+    }
+
+    .brand-menu-line {
+      width: 100%;
+      height: 2px;
+      background: white;
+      transition: transform 0.3s ease;
+    }
+
+    .hero-skills-row {
+      position: absolute;
+      bottom: calc(100 * var(--u));
+      left: calc(57 * var(--u));
+      font-family: 'Archivo', system-ui, -apple-system, sans-serif;
+      font-size: calc(14 * var(--u));
+      font-weight: 500;
+      font-variation-settings: 'wdth' 104;
+      letter-spacing: 0.05em;
+      color: var(--hero-text);
+      animation: riseIn 0.8s ease-out 0.44s backwards;
+    }
+
+    /* Profile, experience, and other sections */
+    .profile-panel {
+      position: relative;
+      width: calc(1302 * var(--u));
+      max-width: 90vw;
+      margin: calc(-80 * var(--u)) auto calc(150 * var(--u)) auto;
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--hairline);
+      border-radius: calc(14 * var(--u));
+      padding: calc(48 * var(--u));
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: calc(48 * var(--u));
+      align-items: flex-start;
+    }
+
+    .profile-heading {
+      font-family: 'Archivo', system-ui, -apple-system, sans-serif;
+      font-size: calc(55 * var(--u));
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.03em;
+      max-width: calc(200 * var(--u));
+      margin-bottom: calc(24 * var(--u));
+    }
+
+    .profile-heading-line {
+      display: block;
+    }
+
+    .profile-description {
+      font-size: calc(14.5 * var(--u));
+      line-height: 1.5;
+      color: var(--light-text);
+      max-width: calc(300 * var(--u));
+      margin-bottom: calc(24 * var(--u));
+    }
+
+    .profile-glass-tiles {
+      position: absolute;
+      top: calc(48 * var(--u));
+      left: calc(48 * var(--u));
+      display: flex;
+      gap: calc(12 * var(--u));
+      z-index: 2;
+    }
+
+    .glass-tile {
+      width: calc(88 * var(--u));
+      height: calc(88 * var(--u));
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--hairline-light);
+      border-radius: calc(12 * var(--u));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: calc(40 * var(--u));
+      color: white;
+    }
+
+    .profile-cards {
+      display: flex;
+      gap: calc(16 * var(--u));
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      padding-bottom: calc(12 * var(--u));
+    }
+
+    .profile-card {
+      flex: 0 0 auto;
+      border-radius: calc(8 * var(--u));
+      padding: calc(24 * var(--u));
+      font-size: calc(13 * var(--u));
+      min-height: calc(326 * var(--u));
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card-avatar {
+      background: var(--card-avatar);
+      color: var(--hero-text);
+      width: calc(293 * var(--u));
+    }
+
+    .avatar-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: calc(12 * var(--u));
+      margin-bottom: calc(24 * var(--u));
+      opacity: 0;
+      animation: avatarsPop 0.6s ease-out 3.5s forwards;
+    }
+
+    @keyframes avatarsPop {
+      from {
+        opacity: 0;
+        transform: scale(0.4);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .avatar {
+      width: calc(48 * var(--u));
+      height: calc(48 * var(--u));
+      border-radius: 50%;
+      overflow: hidden;
+      background: rgba(0, 0, 0, 0.1);
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .card-counter {
+      font-family: 'Archivo', system-ui, -apple-system, sans-serif;
+      font-size: calc(43 * var(--u));
+      font-weight: 700;
+      margin-bottom: calc(8 * var(--u));
+      font-variant-numeric: tabular-nums;
+    }
+
+    .card-caption {
+      font-size: calc(13 * var(--u));
+      font-weight: 500;
+    }
+
+    .card-awards {
+      background: var(--card-dark);
+      color: var(--light-text);
+      width: calc(298 * var(--u));
+    }
+
+    .awards-badge {
+      width: 100%;
+      max-width: calc(120 * var(--u));
+      height: calc(120 * var(--u));
+      margin: calc(16 * var(--u)) auto calc(16 * var(--u)) auto;
+      border: 2px solid var(--light-text);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: calc(10 * var(--u));
+      font-weight: 700;
+      padding: calc(8 * var(--u));
+      line-height: 1.2;
+      opacity: 0;
+      animation: awardLift 0.6s ease-out 5.3s forwards;
+    }
+
+    @keyframes awardLift {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .card-awards-note {
+      font-size: calc(12 * var(--u));
+      line-height: 1.4;
+      margin-top: calc(12 * var(--u));
+      opacity: 0.8;
+    }
+
+    .card-portrait {
+      width: calc(200 * var(--u));
+      background: rgba(255, 255, 255, 0.1);
+      overflow: hidden;
+      opacity: 0;
+      animation: awardLift 0.6s ease-out 3.5s forwards;
+    }
+
+    .card-portrait img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @media (max-width: 760px) {
+      .hero-nav {
+        position: static;
+      }
+
+      .hero-location {
+        position: static;
+        text-align: center;
+      }
+
+      .hero-email-btn {
+        position: static;
+        width: calc(40 * var(--u));
+        height: calc(40 * var(--u));
+      }
+
+      .hero-title-container {
+        position: static;
+      }
+
+      .hero-about {
+        position: static;
+      }
+
+      .hero-stats-frame {
+        position: static;
+        width: 100%;
+      }
+
+      .hero-availability {
+        position: static;
+        text-align: center;
+      }
+
+      .hero-featured-project {
+        position: static;
+        width: 100%;
+      }
+
+      .brand-plate {
+        position: static;
+        transform: none;
+      }
+
+      .hero-skills-row {
+        position: static;
+      }
+
+      .profile-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .profile-cards {
+        flex-direction: column;
+      }
+
+      .card-avatar,
+      .card-awards,
+      .card-portrait {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="visually-hidden">Skip to content</a>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/7dc8b8f3-4ccb-4599-8ce4-7f7c7881bad9.webp" alt="Tanishq Yadav" class="hero-bg-photo">
+
+    <!-- Nav -->
+    <div class="hero-nav">
+      <a href="/" class="nav-link active" data-section="home">Home</a>
+      <a href="/about.html" class="nav-link" data-section="about">About</a>
+      <a href="/projects.html" class="nav-link" data-section="projects">Projects</a>
+      <a href="/skills.html" class="nav-link" data-section="skills">Skills</a>
+      <a href="/contact.html" class="nav-link" data-section="contact">Contact</a>
+    </div>
+
+    <!-- Location & Email -->
+    <div class="hero-location">
+      Greater Noida / Delhi NCR,<br>India
+    </div>
+    <a href="/contact.html" class="hero-email-btn">Contact ↗</a>
+
+    <!-- Title -->
+    <div class="hero-title-container">
+      <h1 class="hero-title">
+        <span class="hero-title-line">TANISHQ /</span>
+        <span class="hero-title-line">YADAV <span class="hero-title-year">('26)</span></span>
+      </h1>
+    </div>
+
+    <!-- About Block -->
+    <div class="hero-about">
+      <div class="hero-about-label">● (ABOUT)</div>
+      <div class="hero-about-text">Data Analyst turning complex datasets into insights, and building AI-powered applications.</div>
+      <a href="/projects.html" class="hero-projects-btn">View Projects ↗</a>
+    </div>
+
+    <!-- Stats Frame -->
+    <div class="hero-stats-frame">
+      <div class="stats-card-dark">
+        <div class="stats-cgpa">8.56 / CGPA at Galgotias University</div>
+        <div class="stats-skills">
+          <div class="skill-tag">Python</div>
+          <div class="skill-tag">SQL</div>
+          <div class="skill-tag">EDA</div>
+          <div class="skill-tag">ML</div>
+          <div class="skill-tag">FastAPI</div>
+          <div class="skill-tag">React</div>
+        </div>
+        <a href="/contact.html" class="stats-open-work">Open to work ↗</a>
+      </div>
+      <div class="stats-photo-card">
+        <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/a9d3641f-d629-46e5-8d2d-5f75386b803d.webp" alt="Projects" width="341" height="80">
+        <div class="stats-photo-label">Projects · 05</div>
+        <div class="stats-photo-bottom">05 / Featured projects built & shipped</div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="hero-availability">
+      I'm available ● for<br>internships
+    </div>
+
+    <!-- Featured Project -->
+    <div class="hero-featured-project">
+      <div class="featured-title">Featured / Carbon Registry / [2025]</div>
+      <a href="/projects/carbon-registry.html" class="featured-card-img">
+        <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/9340eb08-877d-4d08-91fb-b70754541d98.webp" alt="Carbon Registry Project" width="326" height="196">
+        <div class="featured-arrow">→</div>
+      </a>
+      <div class="featured-progress">
+        <div class="featured-progress-bar"></div>
+      </div>
+    </div>
+
+    <!-- Brand Plate -->
+    <div class="brand-plate">
+      <div class="brand-mark">◆</div>
+      <div class="brand-text">TANISHQ</div>
+      <button class="brand-menu" aria-label="Menu" aria-expanded="false">
+        <div class="brand-menu-line"></div>
+        <div class="brand-menu-line"></div>
+      </button>
+    </div>
+
+    <!-- Skills Row -->
+    <div class="hero-skills-row">Python · SQL · Machine Learning</div>
+  </section>
+
+  <!-- MENU OVERLAY -->
+  <nav class="menu-overlay" aria-label="Full page menu">
+    <button class="menu-overlay-close" aria-label="Close menu">✕</button>
+    <ul class="menu-list">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/projects.html">Projects</a></li>
+      <li><a href="/projects/ai-personal-avatar.html">AI Personal Avatar</a></li>
+      <li><a href="/projects/groundwater-assistant.html">Groundwater Assistant</a></li>
+      <li><a href="/projects/carbon-registry.html">Carbon Registry</a></li>
+      <li><a href="/projects/road-mapping-ai-pathfinding.html">Road Mapping AI</a></li>
+      <li><a href="/projects/centinela-bayora.html">CENTINELA / Bayora</a></li>
+      <li><a href="/skills.html">Skills</a></li>
+      <li><a href="/resume.html">Resume</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- BLACK BAR -->
+  <div class="bar">
+    <div class="bar-left">
+      DATA <span class="bar-analyst-grey">ANALYST</span>
+    </div>
+    <div class="bar-middle">
+      SCROLL DOWN <span class="bar-arrow">↓</span>
+    </div>
+    <div class="bar-right">
+      BUILD · ANALYSE · SHIP
+    </div>
+  </div>
+
+  <!-- STATEMENT SECTION -->
+  <section class="statement-section">
+    <div class="statement-text">
+      <span>I</span> <span>turn</span> <span>complex</span> <span>data</span> <span>into</span> <span>meaningful</span>
+      <span>/</span> <span>insights</span> <span>through</span> <span>Python,</span> <span>SQL</span> <span>and</span>
+      <span>/</span> <span>machine</span> <span>learning.</span> <span>I</span> <span>also</span> <span>build</span>
+      <span>/</span> <span>AI-powered</span> <span>applications</span> <span>with</span> <span>LLMs,</span>
+      <span>/</span> <span>voice</span> <span>interfaces</span> <span>and</span> <span>semantic</span> <span>memory.</span>
+    </div>
+    <div class="statement-subtext">
+      Analytical thinking, from data to decision. <span class="grey">*Open to internships and opportunities.*</span>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main id="main">
+    <!-- PROFILE PANEL -->
+    <div class="profile-panel" id="about">
+      <div>
+        <div class="profile-heading">
+          <span class="profile-heading-line">Skills,</span>
+          <span class="profile-heading-line">Projects</span>
+          <span class="profile-heading-line">&</span>
+          <span class="profile-heading-line">Recognition</span>
+        </div>
+        <div class="profile-description">
+          B.Tech CSE (Data Science), Galgotias University, 2024-2028. Data Analyst Intern at Bluestock Fintech. Top 10, Smart India Hackathon 2025.
+        </div>
+        <div class="profile-glass-tiles">
+          <div class="glass-tile">*</div>
+          <div class="glass-tile">⋮⋮</div>
+        </div>
+      </div>
+
+      <div class="profile-cards">
+        <!-- Avatar Card -->
+        <div class="profile-card card-avatar">
+          <div class="avatar-grid">
+            <div class="avatar"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/300f41b1-3de5-4153-afde-06e15e753ad0.webp" alt="Avatar 1" width="48" height="48"></div>
+            <div class="avatar"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/bfff4cdf-4fda-4491-ada6-62f3b6236492.webp" alt="Avatar 2" width="48" height="48"></div>
+            <div class="avatar"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/943b121e-fe72-479f-93ae-aa8cd1650f69.webp" alt="Avatar 3" width="48" height="48"></div>
+            <div class="avatar"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/c673306f-2b81-4c3d-a7d2-3df61d481abb.webp" alt="Avatar 4" width="48" height="48"></div>
+            <div class="avatar"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/2e4fcf11-d0fc-4f31-8f7a-dfe751777141.webp" alt="Avatar 5" width="48" height="48"></div>
+            <div class="avatar"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/ab458fcd-4c2c-426f-8213-21cc3c7274be.webp" alt="Avatar 6" width="48" height="48"></div>
+            <div class="avatar"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/c1fcd833-5ac9-41e9-9352-fead7e64fa24.webp" alt="Avatar 7" width="48" height="48"></div>
+            <div class="avatar"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/4c2b3307-e555-4633-949c-efd3b7e09d82.webp" alt="Avatar 8" width="48" height="48"></div>
+          </div>
+          <div class="card-counter">05+</div>
+          <div class="card-caption">Projects Built</div>
+        </div>
+
+        <!-- Awards Card -->
+        <div class="profile-card card-awards">
+          <div class="awards-badge">BEST PROJECT:<br>CARBON REGISTRY</div>
+          <div class="card-counter">Top 10</div>
+          <div class="card-caption">Smart India Hackathon 2025</div>
+          <div class="card-awards-note">Hack in Hills 2026: Top 500, qualified for Round 2.</div>
+        </div>
+
+        <!-- Portrait Card -->
+        <div class="profile-card card-portrait">
+          <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/addecc7d-666f-4342-8290-ed7f7cbbffd6.webp" alt="Portrait" width="200" height="326">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="section-block">
+      <div class="section-content">
+        <h2 class="section-heading">
+          Experience
+          <a href="/resume.html" class="view-all-link">View all ↗</a>
+        </h2>
+        <div class="experience-item">
+          <div class="exp-company">Bluestock Fintech</div>
+          <div class="exp-role">Data Analyst Intern</div>
+          <div class="exp-period">April 2026 - May 2026</div>
+          <ul class="exp-bullets">
+            <li>Analysed financial datasets using Python and SQL</li>
+            <li>Conducted exploratory data analysis (EDA)</li>
+            <li>Data cleaning and preprocessing</li>
+            <li>Data visualisation and dashboards</li>
+            <li>Analytical reports and insights</li>
+            <li>Surfaced patterns for data-driven decisions</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section-block">
+      <div class="section-content">
+        <h2 class="section-heading">
+          Education
+          <a href="/resume.html" class="view-all-link">View all ↗</a>
+        </h2>
+        <div class="edu-item">
+          <div class="edu-school">Galgotias University</div>
+          <div class="edu-degree">B.Tech CSE, Specialisation Data Science</div>
+          <div class="edu-degree">2024-2028 · CGPA: 8.56/10</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL COMPETENCIES -->
+    <section class="section-block">
+      <div class="section-content">
+        <h2 class="section-heading">
+          Technical Competencies
+          <a href="/skills.html" class="view-all-link">View all ↗</a>
+        </h2>
+        <table class="skills-table">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Skills</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Programming</strong></td>
+              <td>Python, SQL, C++, Java, JavaScript, TypeScript</td>
+            </tr>
+            <tr>
+              <td><strong>Data Analytics</strong></td>
+              <td>EDA, Data Cleaning, Data Preprocessing, Data Interpretation, Data Visualization, Analytical Reporting</td>
+            </tr>
+            <tr>
+              <td><strong>AI & Machine Learning</strong></td>
+              <td>Machine Learning, Deep Learning, Computer Vision, TensorFlow, PyTorch, LLM Integration</td>
+            </tr>
+            <tr>
+              <td><strong>Databases</strong></td>
+              <td>MySQL, PostgreSQL, MongoDB, ChromaDB</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS -->
+    <section class="section-block" id="projects">
+      <div class="section-content">
+        <h2 class="section-heading">
+          Featured Projects
+          <a href="/projects.html" class="view-all-link">View all ↗</a>
+        </h2>
+
+        <div class="project-row" data-categories="AI & LLM">
+          <div class="project-number">01</div>
+          <div class="project-content">
+            <div class="project-title">AI Personal Avatar / Agent</div>
+            <div class="project-tags">
+              <span class="tag">Artificial Intelligence</span>
+              <span class="tag">LLM Applications</span>
+              <span class="tag">Voice AI</span>
+            </div>
+            <div class="project-description">Memory-enabled conversational voice assistant combining speech recognition, language models, speech synthesis and persistent semantic memory.</div>
+            <div class="stack-chips">
+              <span class="stack-chip">Node.js</span>
+              <span class="stack-chip">Express.js</span>
+              <span class="stack-chip">Deepgram</span>
+              <span class="stack-chip">ChromaDB</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-row" data-categories="Data Analytics, AI & LLM">
+          <div class="project-number">02</div>
+          <div class="project-content">
+            <div class="project-title">Intelligent Groundwater Virtual Assistant</div>
+            <div class="project-tags">
+              <span class="tag">Data Analytics</span>
+              <span class="tag">Environmental Technology</span>
+              <span class="tag">AI</span>
+            </div>
+            <div class="project-description">Interactive groundwater data platform with a dashboard and conversational assistant.</div>
+            <div class="stack-chips">
+              <span class="stack-chip">Next.js 14</span>
+              <span class="stack-chip">Python</span>
+              <span class="stack-chip">Flask</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-row" data-categories="Blockchain">
+          <div class="project-number">03</div>
+          <div class="project-content">
+            <div class="project-title">Indian Carbon Registry Prototype</div>
+            <div class="project-tags">
+              <span class="tag">Sustainability Technology</span>
+              <span class="tag">Fintech</span>
+              <span class="tag">Blockchain</span>
+            </div>
+            <div class="project-description">Carbon-credit management prototype for project registration, verification, credit management, trading and retirement.</div>
+            <div class="stack-chips">
+              <span class="stack-chip">React.js</span>
+              <span class="stack-chip">Solidity</span>
+              <span class="stack-chip">Ethers.js</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-headline">LET'S TALK</div>
+    <div class="footer-content">
+      <div class="footer-contact">
+        tanishyadav937@gmail.com<br>
+        Greater Noida, Delhi NCR, India
+      </div>
+      <div class="footer-links">
+        <a href="mailto:tanishyadav937@gmail.com" class="footer-link">Email ↗</a>
+        <a href="https://www.linkedin.com/in/tanishq-yadav-a24656336/" target="_blank" rel="noopener" class="footer-link">LinkedIn ↗</a>
+        <a href="https://github.com/Tanishqyadav937" target="_blank" rel="noopener" class="footer-link">GitHub ↗</a>
+        <a href="https://leetcode.com/u/Tanishq_yadav/" target="_blank" rel="noopener" class="footer-link">LeetCode ↗</a>
+      </div>
+    </div>
+    <div class="footer-copy">
+      © 2026 Tanishq Yadav
+      <a href="#home" class="back-to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="../assets/app.js"></script>
+</body>
+</html>

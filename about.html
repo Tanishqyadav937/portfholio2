@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Tanishq Yadav - Career objectives, professional profile, and recognition.">
+  <title>About | Tanishq Yadav</title>
+  <link rel="canonical" href="https://tanishqyadav.dev/about.html">
+  <meta property="og:title" content="About Tanishq Yadav">
+  <meta property="og:description" content="Learn about my career objectives and professional profile.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://d2ol7oe51mr4n9.cloudfront.net">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+  <style>
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: calc(60 * var(--u));
+      margin-bottom: calc(60 * var(--u));
+    }
+
+    .about-column {
+      display: flex;
+      flex-direction: column;
+      gap: calc(40 * var(--u));
+    }
+
+    .about-section-title {
+      font-family: 'Archivo', system-ui, -apple-system, sans-serif;
+      font-size: calc(20 * var(--u));
+      font-weight: 600;
+      font-variation-settings: 'wdth' 104;
+      margin-bottom: calc(20 * var(--u));
+    }
+
+    .about-bullets {
+      display: flex;
+      flex-direction: column;
+      gap: calc(12 * var(--u));
+    }
+
+    .about-bullet {
+      font-size: calc(13 * var(--u));
+      line-height: 1.6;
+      padding-left: calc(20 * var(--u));
+      position: relative;
+    }
+
+    .about-bullet::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+    }
+
+    .value-prop-row {
+      padding: calc(16 * var(--u)) 0;
+      border-bottom: 1px solid var(--hairline-light);
+      display: grid;
+      grid-template-columns: calc(200 * var(--u)) 1fr;
+      gap: calc(24 * var(--u));
+    }
+
+    .value-prop-row:last-child {
+      border-bottom: none;
+    }
+
+    .value-prop-label {
+      font-weight: 600;
+      font-size: calc(13 * var(--u));
+    }
+
+    .value-prop-desc {
+      font-size: calc(13 * var(--u));
+      line-height: 1.6;
+      color: var(--light-text);
+    }
+
+    .education-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--hairline-light);
+      padding: calc(24 * var(--u));
+      border-radius: calc(8 * var(--u));
+      margin-bottom: calc(20 * var(--u));
+    }
+
+    .education-school {
+      font-weight: 600;
+      font-size: calc(14 * var(--u));
+      margin-bottom: calc(4 * var(--u));
+    }
+
+    .education-degree {
+      font-size: calc(13 * var(--u));
+      color: var(--statement-grey);
+      margin-bottom: calc(8 * var(--u));
+    }
+
+    .recognition-strip {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--hairline-light);
+      padding: calc(24 * var(--u));
+      border-radius: calc(8 * var(--u));
+    }
+
+    .recognition-badge {
+      font-weight: 600;
+      font-size: calc(13 * var(--u));
+      margin-bottom: calc(8 * var(--u));
+    }
+
+    .recognition-note {
+      font-size: calc(12 * var(--u));
+      color: var(--statement-grey);
+    }
+
+    .portrait-card {
+      width: 100%;
+      height: auto;
+      border-radius: calc(8 * var(--u));
+      overflow: hidden;
+      margin-bottom: calc(40 * var(--u));
+    }
+
+    .portrait-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .cta-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: calc(16 * var(--u));
+      margin-top: calc(40 * var(--u));
+    }
+
+    .cta-btn {
+      background: white;
+      color: var(--hero-text);
+      padding: calc(12 * var(--u)) calc(24 * var(--u));
+      border: none;
+      border-radius: calc(6 * var(--u));
+      font-size: calc(13 * var(--u));
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 760px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: calc(40 * var(--u));
+      }
+
+      .value-prop-row {
+        grid-template-columns: 1fr;
+      }
+
+      .cta-row {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="visually-hidden">Skip to content</a>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-top">
+      <nav class="header-nav" aria-label="Main navigation">
+        <a href="/" class="nav-link" data-section="home">Home</a>
+        <a href="/about.html" class="nav-link active" data-section="about">About</a>
+        <a href="/projects.html" class="nav-link" data-section="projects">Projects</a>
+        <a href="/skills.html" class="nav-link" data-section="skills">Skills</a>
+        <a href="/contact.html" class="nav-link" data-section="contact">Contact</a>
+      </nav>
+      <a href="/contact.html" class="header-cta">Contact ↗</a>
+      <button class="header-brand-menu" aria-label="Menu" aria-expanded="false">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </button>
+    </div>
+    <div class="breadcrumb">
+      <a href="/">Home</a> <span>/</span> About
+    </div>
+    <h1 class="page-title">
+      <span class="page-title-line">ABOUT</span>
+    </h1>
+  </header>
+
+  <!-- MENU OVERLAY -->
+  <nav class="menu-overlay" aria-label="Full page menu">
+    <button class="menu-overlay-close" aria-label="Close menu">✕</button>
+    <ul class="menu-list">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/projects.html">Projects</a></li>
+      <li><a href="/skills.html">Skills</a></li>
+      <li><a href="/resume.html">Resume</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- BAR -->
+  <div class="bar">
+    <div class="bar-left">
+      PROFILE
+    </div>
+    <div class="bar-middle">
+      SCROLL DOWN <span class="bar-arrow">↓</span>
+    </div>
+    <div class="bar-right">
+      DETAILED OVERVIEW
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main id="main">
+    <!-- INTRO STATEMENT -->
+    <section class="statement-section">
+      <div class="statement-text">
+        <span>Professional</span> <span>Data</span> <span>Analyst</span> <span>with</span> <span>expertise</span> <span>in</span>
+        <span>/</span> <span>translating</span> <span>complex</span> <span>data</span> <span>into</span> <span>actionable</span>
+        <span>/</span> <span>insights</span> <span>and</span> <span>building</span> <span>scalable</span> <span>AI</span>
+        <span>/</span> <span>applications.</span> <span>Committed</span> <span>to</span> <span>innovation</span> <span>and</span>
+        <span>/</span> <span>continuous</span> <span>learning.</span>
+      </div>
+    </section>
+
+    <!-- ABOUT CONTENT -->
+    <section class="section-block">
+      <div class="section-content">
+        <div class="about-grid">
+          <!-- Left Column: Career Objective & Value Proposition -->
+          <div class="about-column">
+            <div>
+              <h2 class="about-section-title">Career Objective</h2>
+              <div class="about-bullets">
+                <div class="about-bullet">Secure a role as a Data Analyst, Data Science Intern, or Machine Learning Engineer to leverage analytical and technical skills in solving real-world business challenges.</div>
+                <div class="about-bullet">Apply data-driven insights to inform strategic business decisions and drive measurable impact in dynamic, growth-focused organizations.</div>
+                <div class="about-bullet">Develop expertise in advanced analytics, machine learning, and AI applications while contributing to innovative product development.</div>
+                <div class="about-bullet">Build a strong professional network within the data science, analytics, and technology communities through internships and collaborative projects.</div>
+                <div class="about-bullet">Continuously upskill in emerging technologies, including LLMs, generative AI, and cloud platforms to stay competitive in the evolving tech landscape.</div>
+                <div class="about-bullet">Pursue opportunities to mentor and guide junior team members, fostering a collaborative and knowledge-sharing culture.</div>
+              </div>
+            </div>
+
+            <div>
+              <h2 class="about-section-title">Professional Value Proposition</h2>
+              <div class="value-prop-row">
+                <div class="value-prop-label">Analytical Thinking</div>
+                <div class="value-prop-desc">Systematically break down complex problems and translate data into clear, actionable insights.</div>
+              </div>
+              <div class="value-prop-row">
+                <div class="value-prop-label">Technical Versatility</div>
+                <div class="value-prop-desc">Proficient across the full stack—data engineering, analytics, ML, and full-stack development.</div>
+              </div>
+              <div class="value-prop-row">
+                <div class="value-prop-label">Applied AI Development</div>
+                <div class="value-prop-desc">Experienced in building production-ready AI applications with LLMs, voice interfaces, and semantic search.</div>
+              </div>
+              <div class="value-prop-row">
+                <div class="value-prop-label">Problem-Solving</div>
+                <div class="value-prop-desc">Leverages competitive programming experience (DSA proficiency) to solve algorithmic challenges efficiently.</div>
+              </div>
+              <div class="value-prop-row">
+                <div class="value-prop-label">Project Experience</div>
+                <div class="value-prop-desc">Delivered multiple full-stack projects from concept to deployment, including Top 10 Smart India Hackathon 2025.</div>
+              </div>
+              <div class="value-prop-row">
+                <div class="value-prop-label">Innovation & Collaboration</div>
+                <div class="value-prop-desc">Driven to explore cutting-edge technologies and collaborate with teams to build high-impact solutions.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Education, Recognition, Portrait -->
+          <div class="about-column">
+            <div class="education-card">
+              <div class="education-school">Galgotias University</div>
+              <div class="education-degree">B.Tech CSE, Specialisation Data Science</div>
+              <div class="education-degree">2024-2028</div>
+              <div class="education-degree"><strong>CGPA: 8.56/10</strong></div>
+            </div>
+
+            <div class="recognition-strip">
+              <div class="recognition-badge">Top 10 · Smart India Hackathon 2025</div>
+              <div class="recognition-note">Carbon Registry Prototype for carbon-credit management and verification.</div>
+              <div class="recognition-note" style="margin-top: calc(8 * var(--u));">Hack in Hills 2026: Top 500, qualified for Round 2</div>
+            </div>
+
+            <div class="portrait-card">
+              <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/addecc7d-666f-4342-8290-ed7f7cbbffd6.webp" alt="Tanishq Yadav Portrait" width="400" height="500">
+            </div>
+
+            <div class="cta-row">
+              <a href="/projects.html" class="cta-btn">See Projects ↗</a>
+              <a href="/resume.html" class="cta-btn">View Resume ↗</a>
+              <a href="/contact.html" class="cta-btn">Get in touch ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-headline">LET'S TALK</div>
+    <div class="footer-content">
+      <div class="footer-contact">
+        tanishyadav937@gmail.com<br>
+        Greater Noida, Delhi NCR, India
+      </div>
+      <div class="footer-links">
+        <a href="mailto:tanishyadav937@gmail.com" class="footer-link">Email ↗</a>
+        <a href="https://www.linkedin.com/in/tanishq-yadav-a24656336/" target="_blank" rel="noopener" class="footer-link">LinkedIn ↗</a>
+        <a href="https://github.com/Tanishqyadav937" target="_blank" rel="noopener" class="footer-link">GitHub ↗</a>
+        <a href="https://leetcode.com/u/Tanishq_yadav/" target="_blank" rel="noopener" class="footer-link">LeetCode ↗</a>
+      </div>
+    </div>
+    <div class="footer-copy">
+      © 2026 Tanishq Yadav
+      <a href="#top" class="back-to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="../assets/app.js"></script>
+</body>
+</html>

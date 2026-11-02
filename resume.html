@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Resume of Tanishq Yadav - Education, experience, skills, projects, and certifications.">
+  <title>Resume | Tanishq Yadav</title>
+  <link rel="canonical" href="https://tanishqyadav.dev/resume.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+  <style>
+    .resume-section {
+      margin-bottom: calc(40 * var(--u));
+      padding-bottom: calc(40 * var(--u));
+      border-bottom: 1px solid var(--hairline-light);
+    }
+
+    .resume-section:last-child {
+      border-bottom: none;
+    }
+
+    .resume-item {
+      margin-bottom: calc(24 * var(--u));
+    }
+
+    .resume-title {
+      font-weight: 600;
+      font-size: calc(14 * var(--u));
+      margin-bottom: calc(4 * var(--u));
+    }
+
+    .resume-subtitle {
+      font-size: calc(13 * var(--u));
+      color: var(--statement-grey);
+      margin-bottom: calc(8 * var(--u));
+    }
+
+    .resume-bullets {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .resume-bullets li {
+      font-size: calc(13 * var(--u));
+      line-height: 1.6;
+      margin-bottom: calc(6 * var(--u));
+      padding-left: calc(16 * var(--u));
+      position: relative;
+    }
+
+    .resume-bullets li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+    }
+
+    .print-button {
+      position: fixed;
+      top: calc(80 * var(--u));
+      right: calc(30 * var(--u));
+      z-index: 100;
+    }
+
+    @media print {
+      .header, .footer, .bar, .print-button {
+        display: none !important;
+      }
+      body {
+        background: white;
+      }
+      .section-block {
+        background: white;
+        border: none;
+        padding: calc(20 * var(--u));
+      }
+    }
+
+    @media (max-width: 760px) {
+      .print-button {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-bottom: calc(20 * var(--u));
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="visually-hidden">Skip to content</a>
+
+  <header class="header">
+    <div class="header-top">
+      <nav class="header-nav" aria-label="Main navigation">
+        <a href="/" class="nav-link" data-section="home">Home</a>
+        <a href="/resume.html" class="nav-link active" data-section="resume">Resume</a>
+      </nav>
+      <a href="/contact.html" class="header-cta">Contact ↗</a>
+      <button class="header-brand-menu" aria-label="Menu" aria-expanded="false">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </button>
+    </div>
+    <div class="breadcrumb"><a href="/">Home</a> <span>/</span> Resume</div>
+    <h1 class="page-title"><span class="page-title-line">RESUME</span></h1>
+  </header>
+
+  <nav class="menu-overlay" aria-label="Full page menu">
+    <button class="menu-overlay-close" aria-label="Close menu">✕</button>
+    <ul class="menu-list">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/projects.html">Projects</a></li>
+      <li><a href="/skills.html">Skills</a></li>
+      <li><a href="/resume.html">Resume</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="bar">
+    <div class="bar-left">DOCUMENT</div>
+    <div class="bar-middle">CV <span class="bar-arrow">→</span></div>
+    <div class="bar-right">DOWNLOADABLE</div>
+  </div>
+
+  <main id="main">
+    <section class="section-block">
+      <div class="section-content">
+        <button class="print-button btn" onclick="window.print()">Download / Print PDF ↗</button>
+
+        <div class="resume-section">
+          <h2 class="section-heading">Summary</h2>
+          <p style="font-size: calc(13 * var(--u)); line-height: 1.6;">
+            Data Analyst and Full-Stack Developer with expertise in translating complex datasets into actionable insights and building scalable AI-powered applications. Proficient in Python, SQL, and machine learning frameworks. Proven track record of delivering high-impact projects, including a Top 10 achievement at Smart India Hackathon 2025.
+          </p>
+        </div>
+
+        <div class="resume-section">
+          <h2 class="section-heading">Experience</h2>
+          <div class="resume-item">
+            <div class="resume-title">Data Analyst Intern</div>
+            <div class="resume-subtitle">Bluestock Fintech · April 2026 - May 2026</div>
+            <ul class="resume-bullets">
+              <li>Analysed financial datasets using Python and SQL to extract meaningful patterns</li>
+              <li>Conducted comprehensive exploratory data analysis (EDA)</li>
+              <li>Performed data cleaning, preprocessing, and validation</li>
+              <li>Created data visualizations and interactive dashboards</li>
+              <li>Generated analytical reports for stakeholder presentations</li>
+              <li>Surfaced actionable patterns for data-driven business decisions</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="resume-section">
+          <h2 class="section-heading">Education</h2>
+          <div class="resume-item">
+            <div class="resume-title">B.Tech Computer Science Engineering</div>
+            <div class="resume-subtitle">Galgotias University · Specialisation: Data Science</div>
+            <div class="resume-subtitle">2024-2028 · CGPA: 8.56/10</div>
+          </div>
+        </div>
+
+        <div class="resume-section">
+          <h2 class="section-heading">Technical Competencies</h2>
+          <table class="skills-table">
+            <tbody>
+              <tr><td><strong>Programming</strong></td><td>Python, SQL, C++, Java, JavaScript, TypeScript</td></tr>
+              <tr><td><strong>Data & AI</strong></td><td>EDA, ML, Deep Learning, Computer Vision, LLM Integration, TensorFlow, PyTorch</td></tr>
+              <tr><td><strong>Databases</strong></td><td>MySQL, PostgreSQL, MongoDB, ChromaDB</td></tr>
+              <tr><td><strong>Web Stack</strong></td><td>React.js, Next.js, Node.js, Express.js, Flask, FastAPI</td></tr>
+              <tr><td><strong>Tools</strong></td><td>Git, Docker, Linux, Vercel, Render, JWT, SHA-256, Ed25519</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="resume-section">
+          <h2 class="section-heading">Projects</h2>
+          <div class="resume-item">
+            <div class="resume-title">AI Personal Avatar / Agent</div>
+            <div class="resume-subtitle">Node.js, Express.js, Deepgram, LLMs, ChromaDB</div>
+          </div>
+          <div class="resume-item">
+            <div class="resume-title">Intelligent Groundwater Virtual Assistant</div>
+            <div class="resume-subtitle">Next.js, Python, Flask, Real-time data dashboard</div>
+          </div>
+          <div class="resume-item">
+            <div class="resume-title">Indian Carbon Registry Prototype</div>
+            <div class="resume-subtitle">React.js, Solidity, Ethereum, Smart Contracts</div>
+          </div>
+          <div class="resume-item">
+            <div class="resume-title">Road Mapping AI Pathfinding</div>
+            <div class="resume-subtitle">PyTorch, U-Net, Computer Vision, Route Optimization</div>
+          </div>
+          <div class="resume-item">
+            <div class="resume-title">CENTINELA / Bayora</div>
+            <div class="resume-subtitle">Python, FastAPI, LLM Evaluation, Security Testing</div>
+          </div>
+        </div>
+
+        <div class="resume-section">
+          <h2 class="section-heading">Achievements & Recognition</h2>
+          <ul class="resume-bullets">
+            <li>Top 10 · Smart India Hackathon 2025 (Carbon Registry Project)</li>
+            <li>Hack in Hills 2026: Top 500, qualified for Round 2</li>
+            <li>CGPA: 8.56/10 at Galgotias University</li>
+          </ul>
+        </div>
+
+        <div class="resume-section">
+          <h2 class="section-heading">Certifications</h2>
+          <!-- verify exact Google Cloud credential title and active status before publishing -->
+          <table class="cert-table">
+            <tbody>
+              <tr>
+                <td>AWS Solutions Architecture Job Simulation</td>
+                <td>Forage</td>
+                <td>September 2025</td>
+              </tr>
+              <tr>
+                <td>BCG GenAI Job Simulation</td>
+                <td>Forage</td>
+                <td>September 2025</td>
+              </tr>
+              <tr>
+                <td>Google Cloud Professional Cloud Architect</td>
+                <td>Google Cloud</td>
+                <td>August 2025</td>
+              </tr>
+              <tr>
+                <td>Tata GenAI Powered Data Analytics Job Simulation</td>
+                <td>Forage</td>
+                <td>August 2024</td>
+              </tr>
+              <tr>
+                <td>HCL GUVI Credential</td>
+                <td>HCL GUVI Geek Networks, IITM Research Park</td>
+                <td>December 2024</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="resume-section">
+          <h2 class="section-heading">Links</h2>
+          <ul class="resume-bullets">
+            <li><a href="https://www.linkedin.com/in/tanishq-yadav-a24656336/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/Tanishqyadav937" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://leetcode.com/u/Tanishq_yadav/" target="_blank" rel="noopener">LeetCode</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-headline">LET'S TALK</div>
+    <div class="footer-content">
+      <div class="footer-contact">tanishyadav937@gmail.com<br>Greater Noida, Delhi NCR, India</div>
+      <div class="footer-links">
+        <a href="mailto:tanishyadav937@gmail.com" class="footer-link">Email ↗</a>
+        <a href="https://www.linkedin.com/in/tanishq-yadav-a24656336/" target="_blank" rel="noopener" class="footer-link">LinkedIn ↗</a>
+        <a href="https://github.com/Tanishqyadav937" target="_blank" rel="noopener" class="footer-link">GitHub ↗</a>
+        <a href="https://leetcode.com/u/Tanishq_yadav/" target="_blank" rel="noopener" class="footer-link">LeetCode ↗</a>
+      </div>
+    </div>
+    <div class="footer-copy">© 2026 Tanishq Yadav<a href="#top" class="back-to-top">Back to top ↑</a></div>
+  </footer>
+
+  <script src="../assets/app.js"></script>
+</body>
+</html>

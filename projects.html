@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="All projects by Tanishq Yadav - AI, data analytics, blockchain, and computer vision.">
+  <title>Projects | Tanishq Yadav</title>
+  <link rel="canonical" href="https://tanishqyadav.dev/projects.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+  <style>
+    .filter-container {
+      display: flex;
+      gap: calc(12 * var(--u));
+      flex-wrap: wrap;
+      margin-bottom: calc(40 * var(--u));
+    }
+
+    .filter-chip {
+      cursor: pointer;
+    }
+
+    .result-count {
+      font-size: calc(13 * var(--u));
+      color: var(--statement-grey);
+      margin-bottom: calc(20 * var(--u));
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="visually-hidden">Skip to content</a>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-top">
+      <nav class="header-nav" aria-label="Main navigation">
+        <a href="/" class="nav-link" data-section="home">Home</a>
+        <a href="/about.html" class="nav-link" data-section="about">About</a>
+        <a href="/projects.html" class="nav-link active" data-section="projects">Projects</a>
+        <a href="/skills.html" class="nav-link" data-section="skills">Skills</a>
+        <a href="/contact.html" class="nav-link" data-section="contact">Contact</a>
+      </nav>
+      <a href="/contact.html" class="header-cta">Contact ↗</a>
+      <button class="header-brand-menu" aria-label="Menu" aria-expanded="false">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </button>
+    </div>
+    <div class="breadcrumb">
+      <a href="/">Home</a> <span>/</span> Projects
+    </div>
+    <h1 class="page-title">
+      <span class="page-title-line">PROJECTS</span>
+    </h1>
+  </header>
+
+  <!-- MENU OVERLAY -->
+  <nav class="menu-overlay" aria-label="Full page menu">
+    <button class="menu-overlay-close" aria-label="Close menu">✕</button>
+    <ul class="menu-list">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/projects.html">Projects</a></li>
+      <li><a href="/skills.html">Skills</a></li>
+      <li><a href="/resume.html">Resume</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- BAR -->
+  <div class="bar">
+    <div class="bar-left">
+      SHOWCASE
+    </div>
+    <div class="bar-middle">
+      SCROLL DOWN <span class="bar-arrow">↓</span>
+    </div>
+    <div class="bar-right">
+      FEATURED WORK
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main id="main">
+    <section class="section-block">
+      <div class="section-content">
+        <h2 class="section-heading">All Projects</h2>
+        
+        <div class="filter-container">
+          <button class="chip filter-chip active" data-filter="all">All</button>
+          <button class="chip filter-chip" data-filter="AI & LLM">AI & LLM</button>
+          <button class="chip filter-chip" data-filter="Data Analytics">Data Analytics</button>
+          <button class="chip filter-chip" data-filter="Computer Vision">Computer Vision</button>
+          <button class="chip filter-chip" data-filter="Blockchain">Blockchain</button>
+          <button class="chip filter-chip" data-filter="Security">Security</button>
+        </div>
+
+        <div class="result-count">5 projects</div>
+
+        <a href="/projects/ai-personal-avatar.html" class="project-row" data-categories="AI & LLM">
+          <div class="project-number">01</div>
+          <div class="project-content">
+            <div class="project-title">AI Personal Avatar / Agent</div>
+            <div class="project-tagline">Memory-enabled conversational voice assistant</div>
+            <div class="project-description">Memory-enabled conversational voice assistant combining speech recognition, language models, speech synthesis and persistent semantic memory.</div>
+            <div class="stack-chips">
+              <span class="stack-chip">Node.js</span>
+              <span class="stack-chip">Express.js</span>
+              <span class="stack-chip">Deepgram</span>
+              <span class="stack-chip">LLMs</span>
+              <span class="stack-chip">ChromaDB</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="/projects/groundwater-assistant.html" class="project-row" data-categories="Data Analytics,AI & LLM">
+          <div class="project-number">02</div>
+          <div class="project-content">
+            <div class="project-title">Intelligent Groundwater Virtual Assistant</div>
+            <div class="project-tagline">Interactive groundwater data platform</div>
+            <div class="project-description">Interactive groundwater data platform with a dashboard and conversational assistant.</div>
+            <div class="stack-chips">
+              <span class="stack-chip">Next.js</span>
+              <span class="stack-chip">Python</span>
+              <span class="stack-chip">Flask</span>
+              <span class="stack-chip">Vercel</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="/projects/carbon-registry.html" class="project-row" data-categories="Blockchain">
+          <div class="project-number">03</div>
+          <div class="project-content">
+            <div class="project-title">Indian Carbon Registry Prototype</div>
+            <div class="project-tagline">Carbon-credit management platform</div>
+            <div class="project-description">Carbon-credit management prototype for project registration, verification, credit management, trading and retirement.</div>
+            <div class="stack-chips">
+              <span class="stack-chip">React.js</span>
+              <span class="stack-chip">Solidity</span>
+              <span class="stack-chip">MongoDB</span>
+              <span class="stack-chip">Ethers.js</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="/projects/road-mapping-ai-pathfinding.html" class="project-row" data-categories="Computer Vision">
+          <div class="project-number">04</div>
+          <div class="project-content">
+            <div class="project-title">Interactive Road Mapping Interface: AI Pathfinding</div>
+            <div class="project-tagline">Road detection and pathfinding from satellite imagery</div>
+            <div class="project-description">Road detection and pathfinding from satellite imagery, computing optimised routes.</div>
+            <div class="stack-chips">
+              <span class="stack-chip">Python</span>
+              <span class="stack-chip">PyTorch</span>
+              <span class="stack-chip">U-Net</span>
+              <span class="stack-chip">Flask</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="/projects/centinela-bayora.html" class="project-row" data-categories="Security,AI & LLM">
+          <div class="project-number">05</div>
+          <div class="project-content">
+            <div class="project-title">CENTINELA / Bayora</div>
+            <div class="project-tagline">Secure LLM red-team evaluation platform</div>
+            <div class="project-description">Secure LLM red-team evaluation platform for adversarial prompt testing, evaluation orchestration, result verification and audit logging.</div>
+            <div class="stack-chips">
+              <span class="stack-chip">Python</span>
+              <span class="stack-chip">FastAPI</span>
+              <span class="stack-chip">Docker</span>
+              <span class="stack-chip">SHA-256</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-headline">LET'S TALK</div>
+    <div class="footer-content">
+      <div class="footer-contact">
+        tanishyadav937@gmail.com<br>
+        Greater Noida, Delhi NCR, India
+      </div>
+      <div class="footer-links">
+        <a href="mailto:tanishyadav937@gmail.com" class="footer-link">Email ↗</a>
+        <a href="https://www.linkedin.com/in/tanishq-yadav-a24656336/" target="_blank" rel="noopener" class="footer-link">LinkedIn ↗</a>
+        <a href="https://github.com/Tanishqyadav937" target="_blank" rel="noopener" class="footer-link">GitHub ↗</a>
+        <a href="https://leetcode.com/u/Tanishq_yadav/" target="_blank" rel="noopener" class="footer-link">LeetCode ↗</a>
+      </div>
+    </div>
+    <div class="footer-copy">
+      © 2026 Tanishq Yadav
+      <a href="#top" class="back-to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="../assets/app.js"></script>
+</body>
+</html>

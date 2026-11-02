@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Tanishq Yadav - Get in touch for internships, collaborations, and opportunities.">
+  <title>Contact | Tanishq Yadav</title>
+  <link rel="canonical" href="https://tanishqyadav.dev/contact.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+  <style>
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: calc(60 * var(--u));
+      margin-bottom: calc(60 * var(--u));
+    }
+
+    .contact-info-list {
+      display: flex;
+      flex-direction: column;
+      gap: calc(24 * var(--u));
+    }
+
+    .contact-info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: calc(16 * var(--u));
+      justify-content: space-between;
+    }
+
+    .contact-info-label {
+      font-weight: 600;
+      min-width: calc(120 * var(--u));
+    }
+
+    .contact-info-value {
+      text-align: right;
+      flex: 1;
+    }
+
+    .copy-btn {
+      background: transparent;
+      border: none;
+      color: var(--light-text);
+      cursor: pointer;
+      padding: 0;
+      text-decoration: underline;
+      font-size: calc(13 * var(--u));
+    }
+
+    .copy-btn:hover {
+      opacity: 0.7;
+    }
+
+    .local-time-label {
+      font-weight: 600;
+    }
+
+    .local-time-value {
+      font-family: 'Courier New', monospace;
+      font-size: calc(13 * var(--u));
+    }
+
+    .availability-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: calc(8 * var(--u));
+      background: rgba(76, 175, 80, 0.1);
+      border: 1px solid rgba(76, 175, 80, 0.3);
+      padding: calc(8 * var(--u)) calc(16 * var(--u));
+      border-radius: calc(20 * var(--u));
+      font-size: calc(12 * var(--u));
+      color: #4cb050;
+      margin-top: calc(12 * var(--u));
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: calc(8 * var(--u));
+      font-weight: 500;
+    }
+
+    .form-input,
+    .form-select,
+    .form-textarea {
+      width: 100%;
+    }
+
+    .form-submit {
+      align-self: flex-start;
+      margin-top: calc(16 * var(--u));
+    }
+
+    .preferred-opportunities {
+      display: flex;
+      gap: calc(12 * var(--u));
+      flex-wrap: wrap;
+      margin: calc(40 * var(--u)) 0;
+    }
+
+    .quick-actions {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: calc(16 * var(--u));
+      margin-top: calc(40 * var(--u));
+    }
+
+    @media (max-width: 760px) {
+      .contact-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-info-item {
+        flex-direction: column;
+      }
+
+      .contact-info-value {
+        text-align: left;
+      }
+
+      .quick-actions {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="visually-hidden">Skip to content</a>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-top">
+      <nav class="header-nav" aria-label="Main navigation">
+        <a href="/" class="nav-link" data-section="home">Home</a>
+        <a href="/about.html" class="nav-link" data-section="about">About</a>
+        <a href="/projects.html" class="nav-link" data-section="projects">Projects</a>
+        <a href="/skills.html" class="nav-link" data-section="skills">Skills</a>
+        <a href="/contact.html" class="nav-link active" data-section="contact">Contact</a>
+      </nav>
+      <button class="header-brand-menu" aria-label="Menu" aria-expanded="false">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </button>
+    </div>
+    <div class="breadcrumb">
+      <a href="/">Home</a> <span>/</span> Contact
+    </div>
+    <h1 class="page-title">
+      <span class="page-title-line">CONTACT</span>
+    </h1>
+  </header>
+
+  <!-- MENU OVERLAY -->
+  <nav class="menu-overlay" aria-label="Full page menu">
+    <button class="menu-overlay-close" aria-label="Close menu">✕</button>
+    <ul class="menu-list">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/projects.html">Projects</a></li>
+      <li><a href="/skills.html">Skills</a></li>
+      <li><a href="/resume.html">Resume</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- BAR -->
+  <div class="bar">
+    <div class="bar-left">
+      REACH OUT
+    </div>
+    <div class="bar-middle">
+      GET IN TOUCH <span class="bar-arrow">→</span>
+    </div>
+    <div class="bar-right">
+      LET'S CONNECT
+    </div>
+  </div>
+
+  <!-- STATEMENT SECTION -->
+  <section class="statement-section">
+    <div class="statement-text">
+      <span>Open</span> <span>to</span> <span>internships,</span> <span>collaborations,</span> <span>hackathons</span>
+      <span>/</span> <span>and</span> <span>professional</span> <span>opportunities.</span> <span>Let's</span>
+      <span>/</span> <span>build</span> <span>something</span> <span>amazing</span> <span>together.</span>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main id="main">
+    <section class="section-block">
+      <div class="section-content">
+        <div class="contact-layout">
+          <!-- Left: Direct Contact -->
+          <div class="contact-info-list">
+            <h2 class="section-heading">Direct Contact</h2>
+            
+            <div class="contact-info-item">
+              <div class="contact-info-label">Email</div>
+              <div class="contact-info-value">
+                <button class="copy-btn" data-copy="tanishyadav937@gmail.com">tanishyadav937@gmail.com</button>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-label">Location</div>
+              <div class="contact-info-value">Greater Noida, Delhi NCR, India</div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-label">Local Time</div>
+              <div class="contact-info-value">
+                <div class="local-time-label">IST (Asia/Kolkata)</div>
+                <div class="local-time-value">00:00:00 AM</div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-label">Status</div>
+              <div>
+                <div class="availability-pill">● Available for internships</div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-label">Social</div>
+              <div class="contact-info-value">
+                <div style="display: flex; gap: calc(12 * var(--u)); flex-direction: column;">
+                  <button class="copy-btn" data-copy="https://www.linkedin.com/in/tanishq-yadav-a24656336/">LinkedIn</button>
+                  <button class="copy-btn" data-copy="https://github.com/Tanishqyadav937">GitHub</button>
+                  <button class="copy-btn" data-copy="https://leetcode.com/u/Tanishq_yadav/">LeetCode</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Contact Form -->
+          <div>
+            <h2 class="section-heading">Send Message</h2>
+            <form class="contact-form">
+              <div class="form-group">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" name="name" class="form-input" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email" class="form-input" required>
+              </div>
+
+              <div class="form-group">
+                <label for="opportunity" class="form-label">Opportunity Type</label>
+                <select id="opportunity" name="opportunity" class="form-select" required>
+                  <option value="">Select an option</option>
+                  <option value="Internship">Internship</option>
+                  <option value="Collaboration">Collaboration</option>
+                  <option value="Hackathon">Hackathon</option>
+                  <option value="Full-time / Professional">Full-time / Professional</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-textarea" required></textarea>
+              </div>
+
+              <input type="email" name="website" class="form-honeypot" style="display: none;">
+
+              <button type="submit" class="form-submit">Send Message</button>
+            </form>
+            <p style="font-size: calc(11 * var(--u)); color: var(--statement-grey); margin-top: calc(12 * var(--u));">
+              <!-- Optional: Add data-endpoint="https://your-formspree-url" to form to enable backend submission -->
+            </p>
+          </div>
+        </div>
+
+        <!-- Preferred Opportunities -->
+        <div style="margin-top: calc(80 * var(--u)); border-top: 1px solid var(--hairline-light); padding-top: calc(60 * var(--u));">
+          <h3 class="section-heading">Preferred Opportunities</h3>
+          <div class="preferred-opportunities">
+            <span class="chip">Data Analytics</span>
+            <span class="chip">Data Science</span>
+            <span class="chip">Business Intelligence</span>
+            <span class="chip">Machine Learning</span>
+            <span class="chip">Applied AI</span>
+          </div>
+        </div>
+
+        <!-- Target Roles & Industries -->
+        <div style="margin-top: calc(60 * var(--u));">
+          <h3 class="section-heading">Target Roles & Industries</h3>
+          <div class="target-lists">
+            <div class="target-list">
+              <div class="target-list-title">Roles</div>
+              <div class="target-item">Data Analyst</div>
+              <div class="target-item">Junior Data Analyst</div>
+              <div class="target-item">Business Intelligence Analyst</div>
+              <div class="target-item">Data Science Intern</div>
+              <div class="target-item">Aspiring Data Scientist</div>
+              <div class="target-item">Machine Learning Intern</div>
+              <div class="target-item">AI Engineer Intern</div>
+              <div class="target-item">Python Developer</div>
+              <div class="target-item">Software Developer</div>
+              <div class="target-item">Applied AI Developer</div>
+            </div>
+            <div class="target-list">
+              <div class="target-list-title">Industries</div>
+              <div class="target-item">Financial Technology and Banking</div>
+              <div class="target-item">Information Technology</div>
+              <div class="target-item">Healthcare</div>
+              <div class="target-item">E-commerce and Retail</div>
+              <div class="target-item">Sustainability and Environmental Technology</div>
+              <div class="target-item">Business Analytics</div>
+              <div class="target-item">Artificial Intelligence</div>
+              <div class="target-item">Product-Based Technology Companies</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div style="margin-top: calc(60 * var(--u));">
+          <h3 class="section-heading">Quick Actions</h3>
+          <div class="quick-actions">
+            <a href="mailto:tanishyadav937@gmail.com" class="btn" style="justify-content: center;">Email me ↗</a>
+            <a href="https://www.linkedin.com/in/tanishq-yadav-a24656336/" target="_blank" rel="noopener" class="btn" style="justify-content: center;">Connect on LinkedIn ↗</a>
+            <a href="https://github.com/Tanishqyadav937" target="_blank" rel="noopener" class="btn" style="justify-content: center;">View GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-headline">LET'S TALK</div>
+    <div class="footer-content">
+      <div class="footer-contact">
+        tanishyadav937@gmail.com<br>
+        Greater Noida, Delhi NCR, India
+      </div>
+      <div class="footer-links">
+        <a href="mailto:tanishyadav937@gmail.com" class="footer-link">Email ↗</a>
+        <a href="https://www.linkedin.com/in/tanishq-yadav-a24656336/" target="_blank" rel="noopener" class="footer-link">LinkedIn ↗</a>
+        <a href="https://github.com/Tanishqyadav937" target="_blank" rel="noopener" class="footer-link">GitHub ↗</a>
+        <a href="https://leetcode.com/u/Tanishq_yadav/" target="_blank" rel="noopener" class="footer-link">LeetCode ↗</a>
+      </div>
+    </div>
+    <div class="footer-copy">
+      © 2026 Tanishq Yadav
+      <a href="#top" class="back-to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="../assets/app.js"></script>
+  <script>
+    function initLocalTime() {
+      const el = document.querySelector('.local-time-value');
+      function update() {
+        const formatter = new Intl.DateTimeFormat('en-US', {
+          timeZone: 'Asia/Kolkata',
+          hour: '2-digit',
+          minute: '2-digit',
+          second: '2-digit',
+          hour12: true
+        });
+        el.textContent = formatter.format(new Date());
+      }
+      update();
+      setInterval(update, 1000);
+    }
+    initLocalTime();
+  </script>
+</body>
+</html>
